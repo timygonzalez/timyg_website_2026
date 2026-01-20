@@ -85,7 +85,7 @@ export const projects = [
             "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png",
             "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png",
             "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png",
-            "https://framerusercontent.com/images/cv3y6f5f6uBDZ6CPe4SxYtuLToI.png",
+            "https://framerusercontent.com/images/BoqIdoYmyES1O5oTHy1Sm6aL9I.png",
             "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png",
             "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png",
             "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png",
