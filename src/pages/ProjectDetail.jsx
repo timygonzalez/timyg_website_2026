@@ -166,7 +166,7 @@ const ProjectDetail = () => {
                                                         <div className="md:w-2/3 p-8 md:p-10 flex flex-col justify-center">
                                                             <div className="mb-6">
                                                                 <h3 className="text-3xl font-bold mb-1">{profile.name}</h3>
-                                                                <p className="text-primary font-medium tracking-wide text-sm">{profile.role}, {profile.age}</p>
+                                                                <p className="text-white font-medium tracking-wide text-sm">{profile.role}, {profile.age}</p>
                                                             </div>
                                                             <p className="text-slate-400 text-sm leading-relaxed mb-8 italic">
                                                                 "{profile.bio}"
