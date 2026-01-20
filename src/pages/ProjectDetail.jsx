@@ -212,9 +212,11 @@ const ProjectDetail = () => {
                                     <span className="w-10 h-10 bg-slate-900 text-white rounded-xl flex items-center justify-center mr-4 text-sm">06</span>
                                     Tech Stack
                                 </h2>
-                                <div className="flex flex-wrap justify-between items-center w-full gap-8">
+                                <div className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-9 gap-8 items-center w-full">
                                     {project.tools.map((icon, i) => (
-                                        <img key={i} src={icon} alt="Tool Icon" className="w-16 h-16 object-contain grayscale hover:grayscale-0 transition-all" />
+                                        <div key={i} className="flex justify-center">
+                                            <img src={icon} alt="Tool Icon" className="w-14 h-14 object-contain grayscale hover:grayscale-0 transition-all" />
+                                        </div>
                                     ))}
                                 </div>
                             </section>
