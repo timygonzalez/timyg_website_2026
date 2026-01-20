@@ -72,7 +72,7 @@ const ProjectDetail = () => {
                         </div>
 
                         {/* Meta Info Grid */}
-                        <div className="bg-sky-50 p-12 grid grid-cols-2 md:grid-cols-5 gap-8 mb-20">
+                        <div className="bg-sky-50 p-12 flex flex-wrap md:flex-nowrap justify-between gap-8 mb-20">
                             {project.meta && Object.entries(project.meta).map(([key, value]) => (
                                 <div key={key}>
                                     <h4 className="text-xl font-bold text-slate-900 mb-2 capitalize">{key}</h4>
