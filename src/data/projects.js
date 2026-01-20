@@ -148,9 +148,15 @@ export const projects = [
             { "url": "https://framerusercontent.com/images/dMduSXvvQpPatimYJFaHcw2Llo.png", "label": "Analytics Overview" }
         ],
         "tools": [
-            "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png",
-            "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png",
-            "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png"
+            { "name": "Figma", "url": "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png" },
+            { "name": "UsabilityHub", "url": "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png" },
+            { "name": "Jira", "url": "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png" },
+            { "name": "Adobe Creative Cloud", "url": "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png" },
+            { "name": "Adobe Illustrator", "url": "/adobe-illustrator.png" },
+            { "name": "Framer", "url": "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png" },
+            { "name": "Azure DevOps", "url": "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png" },
+            { "name": "Miro", "url": "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png" },
+            { "name": "Adobe Photoshop", "url": "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png" }
         ]
     },
     {
@@ -224,9 +230,15 @@ export const projects = [
             { "url": "https://framerusercontent.com/images/aXZXU5zse6HXwqPX4v0WOkbShPM.png", "label": "UX Process Infographic" }
         ],
         "tools": [
-            "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png",
-            "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png",
-            "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png"
+            { "name": "Figma", "url": "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png" },
+            { "name": "UsabilityHub", "url": "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png" },
+            { "name": "Jira", "url": "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png" },
+            { "name": "Adobe Creative Cloud", "url": "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png" },
+            { "name": "Adobe Illustrator", "url": "/adobe-illustrator.png" },
+            { "name": "Framer", "url": "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png" },
+            { "name": "Azure DevOps", "url": "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png" },
+            { "name": "Miro", "url": "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png" },
+            { "name": "Adobe Photoshop", "url": "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png" }
         ]
     },
     {
@@ -279,6 +291,17 @@ export const projects = [
             { "url": "https://framerusercontent.com/images/VuYVmX6Pa3klQcYBnsW2e8pFVUI.png", "label": "Persona Card - Andrew Smith" },
             { "url": "https://framerusercontent.com/images/yBoXH1PryMYkuLUPfScBBDFrkjE.png", "label": "Design System Forms" },
             { "url": "https://framerusercontent.com/images/iBhTvVrUPZcJNWXvundEsGiZJ7E.png", "label": "Accessibility Guidelines" }
+        ],
+        "tools": [
+            { "name": "Figma", "url": "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png" },
+            { "name": "UsabilityHub", "url": "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png" },
+            { "name": "Jira", "url": "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png" },
+            { "name": "Adobe Creative Cloud", "url": "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png" },
+            { "name": "Adobe Illustrator", "url": "/adobe-illustrator.png" },
+            { "name": "Framer", "url": "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png" },
+            { "name": "Azure DevOps", "url": "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png" },
+            { "name": "Miro", "url": "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png" },
+            { "name": "Adobe Photoshop", "url": "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png" }
         ]
     },
     {
@@ -348,6 +371,17 @@ export const projects = [
         "gallery": [
             { "url": "https://framerusercontent.com/images/9NnK2dvbfSkn4dVK62098ZOC18.png", "label": "Search Interface Preview" },
             { "url": "https://framerusercontent.com/images/Ko7BKCIdUzQqiugM6eML5ueADc.png", "label": "Dashboard Design" }
+        ],
+        "tools": [
+            { "name": "Figma", "url": "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png" },
+            { "name": "UsabilityHub", "url": "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png" },
+            { "name": "Jira", "url": "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png" },
+            { "name": "Adobe Creative Cloud", "url": "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png" },
+            { "name": "Adobe Illustrator", "url": "/adobe-illustrator.png" },
+            { "name": "Framer", "url": "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png" },
+            { "name": "Azure DevOps", "url": "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png" },
+            { "name": "Miro", "url": "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png" },
+            { "name": "Adobe Photoshop", "url": "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png" }
         ]
     },
     {
@@ -400,6 +434,17 @@ export const projects = [
             { "url": "https://framerusercontent.com/images/LUc39xiWFrjGUOGRy5bAd63Y.png", "label": "USAA Dashboard Overview" },
             { "url": "https://framerusercontent.com/images/zj6zv46UsrNVphZzBVkAW8AAuSU.png", "label": "UI Design Example" },
             { "url": "https://framerusercontent.com/images/YsoBfwdlWR7r6fSmTmDGfOCjlU.svg", "label": "Data Visualization Concept" }
+        ],
+        "tools": [
+            { "name": "Figma", "url": "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png" },
+            { "name": "UsabilityHub", "url": "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png" },
+            { "name": "Jira", "url": "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png" },
+            { "name": "Adobe Creative Cloud", "url": "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png" },
+            { "name": "Adobe Illustrator", "url": "/adobe-illustrator.png" },
+            { "name": "Framer", "url": "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png" },
+            { "name": "Azure DevOps", "url": "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png" },
+            { "name": "Miro", "url": "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png" },
+            { "name": "Adobe Photoshop", "url": "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png" }
         ]
     }
 ];
