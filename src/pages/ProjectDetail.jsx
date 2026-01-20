@@ -35,19 +35,44 @@ const ProjectDetail = () => {
             <main className="max-w-5xl mx-auto px-6 md:px-10 py-10">
                 <div>
                     {/* Header Section */}
+                    {/* Header Section */}
                     <header className="mb-20">
-                        <span className="text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">
-                            {project.category}
-                        </span>
-                        <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-8 leading-tight tracking-tight">
-                            {project.title}
-                        </h1>
-                        <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-3xl mb-12">
-                            {project.description}
-                        </p>
+                        <div className="flex flex-col lg:flex-row gap-12 items-center mb-16">
+                            <div className="lg:w-1/2">
+                                <div className="flex items-center gap-4 mb-6">
+                                    <img
+                                        src={project.thumbnail}
+                                        alt={project.meta?.Company || "Company Logo"}
+                                        className="w-16 h-16 object-contain"
+                                    />
+                                    <span className="text-3xl font-bold text-slate-900">
+                                        {project.meta?.Company || project.category}
+                                    </span>
+                                </div>
+                                <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
+                                    {project.title}
+                                </h1>
+                                <p className="text-xl md:text-2xl text-slate-600 leading-relaxed">
+                                    {project.description}
+                                </p>
+                            </div>
+
+                            {/* Main Hero Image - Right Column */}
+                            <div className="lg:w-1/2">
+                                {project.gallery && project.gallery[0] && (
+                                    <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100 bg-slate-50">
+                                        <img
+                                            src={project.gallery[0].url}
+                                            alt={project.gallery[0].label}
+                                            className="w-full h-auto object-cover"
+                                        />
+                                    </div>
+                                )}
+                            </div>
+                        </div>
 
                         {/* Meta Info Grid */}
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-8 border-y border-slate-100 mb-16">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-8 border-y border-slate-100">
                             {project.meta && Object.entries(project.meta).map(([key, value]) => (
                                 <div key={key}>
                                     <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">{key}</h4>
@@ -55,17 +80,6 @@ const ProjectDetail = () => {
                                 </div>
                             ))}
                         </div>
-
-                        {/* Main Hero Image */}
-                        {project.gallery && project.gallery[0] && (
-                            <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100 bg-slate-50">
-                                <img
-                                    src={project.gallery[0].url}
-                                    alt={project.gallery[0].label}
-                                    className="w-full h-auto object-cover"
-                                />
-                            </div>
-                        )}
                     </header>
 
                     {/* Dynamic Sections */}
