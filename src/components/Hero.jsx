@@ -17,7 +17,7 @@ const Hero = () => {
                     </h1>
 
                     <p className="text-xl md:text-2xl text-muted font-medium max-w-2xl">
-                        Open to full-time UX / Product / Strategy / Service Design roles.
+                        Open to full-time UX / Product / Strategy / Service Design roles and AI-enabled initiatives.
                     </p>
 
                     <div className="flex flex-wrap gap-4 pt-4">
