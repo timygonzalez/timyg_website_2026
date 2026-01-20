@@ -9,7 +9,7 @@ export const projects = [
         "meta": {
             "Company": "Fluree",
             "Product": "Fluree Nexus",
-            "Collaborators": "Bryan Ranzenberger | UX Designer, Jose Arias | 3D Graphic Artist",
+            "Collaborators": "Bryan Ranzenberger | UX Designer, Timy Gonzalez | UX Designer, Jose Arias | 3D Graphic Artist",
             "Role": "Senior Product Designer",
             "Year": "2024"
         },
