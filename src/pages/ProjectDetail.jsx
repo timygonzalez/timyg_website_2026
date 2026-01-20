@@ -213,11 +213,28 @@ const ProjectDetail = () => {
                                     Tech Stack
                                 </h2>
                                 <div className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-9 gap-8 items-center w-full">
-                                    {project.tools.map((icon, i) => (
-                                        <div key={i} className="flex justify-center">
-                                            <img src={icon} alt="Tool Icon" className="w-14 h-14 object-contain grayscale hover:grayscale-0 transition-all" />
-                                        </div>
-                                    ))}
+                                    {project.tools.map((item, i) => {
+                                        const url = typeof item === 'string' ? item : item.url;
+                                        const name = typeof item === 'string' ? '' : item.name;
+
+                                        return (
+                                            <div key={i} className="relative group flex justify-center cursor-pointer">
+                                                {/* Tooltip */}
+                                                {name && (
+                                                    <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-[10px] font-bold py-1.5 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10 shadow-lg mb-2">
+                                                        {name}
+                                                        <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-4 border-transparent border-t-slate-900"></div>
+                                                    </div>
+                                                )}
+
+                                                <img
+                                                    src={url}
+                                                    alt={name || "Tool Icon"}
+                                                    className="w-14 h-14 object-contain grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100"
+                                                />
+                                            </div>
+                                        );
+                                    })}
                                 </div>
                             </section>
                         )}

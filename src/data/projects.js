@@ -81,15 +81,15 @@ export const projects = [
             { "url": "https://framerusercontent.com/images/tBRDVfkX7tLIoFYTLWIwwrtzHog.png", "label": "Data Lineage Visualization" }
         ],
         "tools": [
-            "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png",
-            "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png",
-            "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png",
-            "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png",
-            "/adobe-illustrator.png",
-            "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png",
-            "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png",
-            "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png",
-            "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png"
+            { "name": "Figma", "url": "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png" },
+            { "name": "UsabilityHub", "url": "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png" },
+            { "name": "Jira", "url": "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png" },
+            { "name": "Adobe Creative Cloud", "url": "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png" },
+            { "name": "Adobe Illustrator", "url": "/adobe-illustrator.png" },
+            { "name": "Framer", "url": "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png" },
+            { "name": "Azure DevOps", "url": "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png" },
+            { "name": "Miro", "url": "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png" },
+            { "name": "Adobe Photoshop", "url": "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png" }
         ]
     },
     {
