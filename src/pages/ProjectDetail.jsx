@@ -72,11 +72,21 @@ const ProjectDetail = () => {
                         </div>
 
                         {/* Meta Info Grid */}
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-8 border-y border-slate-100">
+                        <div className="bg-sky-50 p-12 grid grid-cols-2 md:grid-cols-5 gap-8 mb-20">
                             {project.meta && Object.entries(project.meta).map(([key, value]) => (
                                 <div key={key}>
-                                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">{key}</h4>
-                                    <p className="text-slate-800 font-medium">{value}</p>
+                                    <h4 className="text-xl font-bold text-slate-900 mb-2 capitalize">{key}</h4>
+                                    {key === 'Collaborators' ? (
+                                        <div className="flex flex-col gap-1">
+                                            {value.split(',').map((collaborator, index) => (
+                                                <p key={index} className="text-sm text-slate-700 font-medium">
+                                                    {collaborator.trim()}
+                                                </p>
+                                            ))}
+                                        </div>
+                                    ) : (
+                                        <p className="text-sm text-slate-700 font-medium">{value}</p>
+                                    )}
                                 </div>
                             ))}
                         </div>
