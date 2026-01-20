@@ -43,7 +43,7 @@ const ProjectDetail = () => {
                                     <img
                                         src={project.thumbnail}
                                         alt={project.meta?.Company || "Company Logo"}
-                                        className="w-16 h-16 object-contain"
+                                        className="h-16 w-auto object-contain rounded-md"
                                     />
                                     <span className="text-3xl font-bold text-slate-900">
                                         {project.meta?.Company || project.category}
