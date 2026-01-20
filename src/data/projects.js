@@ -83,6 +83,8 @@ export const projects = [
             { "url": "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png", "label": "AI Chatbot Interfaces" }
         ],
         "tools": [
+            "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png",
+            "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png",
             "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png"
         ]
     },
