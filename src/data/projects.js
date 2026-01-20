@@ -85,7 +85,7 @@ export const projects = [
             "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png",
             "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png",
             "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png",
-            "https://framerusercontent.com/images/pOXsLEJepE6cdij8r3WaT7YuP8.png",
+            "/adobe-illustrator.png",
             "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png",
             "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png",
             "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png",
