@@ -81,7 +81,7 @@ export const projects = [
             { "url": "https://framerusercontent.com/images/tBRDVfkX7tLIoFYTLWIwwrtzHog.png", "label": "Data Lineage Visualization" }
         ],
         "tools": [
-            "https://framerusercontent.com/images/qAaZvBrGY39fnJO61U5c5M8rqM.png",
+            "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png",
             "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png",
             "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png",
             "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png",
