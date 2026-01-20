@@ -181,14 +181,12 @@ const ProjectDetail = () => {
                                                                     </div>
                                                                 </div>
                                                                 <div>
-                                                                    <h5 className="text-xs font-bold uppercase tracking-widest text-red-400 mb-3">Frustrations</h5>
-                                                                    <ul className="space-y-1.5">
+                                                                    <h5 className="text-xs font-bold uppercase tracking-widest text-primary mb-3">Frustrations</h5>
+                                                                    <div className="flex flex-wrap gap-2">
                                                                         {profile.frustrations.map((f, j) => (
-                                                                            <li key={j} className="text-xs text-slate-300 flex items-start">
-                                                                                <span className="mr-2 text-red-400/50">•</span> {f}
-                                                                            </li>
+                                                                            <span key={j} className="text-xs bg-white/10 px-3 py-1.5 rounded-full border border-white/5">{f}</span>
                                                                         ))}
-                                                                    </ul>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
