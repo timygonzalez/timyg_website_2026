@@ -41,7 +41,7 @@ const ProjectDetail = () => {
                             <div className="lg:w-1/2">
                                 <div className="flex items-center gap-4 mb-6">
                                     <img
-                                        src={project.thumbnail}
+                                        src={project.logo || project.thumbnail}
                                         alt={project.meta?.Company || "Company Logo"}
                                         className="h-16 w-auto object-contain rounded-md"
                                     />
