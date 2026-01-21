@@ -157,7 +157,7 @@ const ProjectDetail = () => {
                                             </h2>
                                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                                                 {section.profiles.map((profile, i) => (
-                                                    <div key={i} className="bg-slate-900 text-white rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row shadow-2xl">
+                                                    <div key={i} className="bg-[#1d1a1a] text-white rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row shadow-2xl">
                                                         <div className="md:w-1/3">
                                                             <img
                                                                 src={profile.image}
@@ -170,7 +170,7 @@ const ProjectDetail = () => {
                                                                 <h3 className="text-3xl font-bold mb-1">{profile.name}</h3>
                                                                 <p className="text-white font-medium tracking-wide text-sm">{profile.role}, {profile.age}</p>
                                                             </div>
-                                                            <p className="text-slate-400 text-sm leading-relaxed mb-8 italic">
+                                                            <p className="text-white/80 text-sm leading-relaxed mb-8 italic">
                                                                 "{profile.bio}"
                                                             </p>
                                                             <div className="space-y-6">
@@ -178,7 +178,7 @@ const ProjectDetail = () => {
                                                                     <h5 className="text-xs font-bold uppercase tracking-widest text-primary mb-3">Core Needs</h5>
                                                                     <div className="flex flex-wrap gap-2">
                                                                         {profile.needs.map((n, j) => (
-                                                                            <span key={j} className="text-xs bg-white/10 px-3 py-1.5 rounded-full border border-white/5">{n}</span>
+                                                                            <span key={j} className="text-xs bg-[#f2f2f2] text-slate-900 font-bold px-3 py-1.5 rounded-full">{n}</span>
                                                                         ))}
                                                                     </div>
                                                                 </div>
@@ -186,7 +186,7 @@ const ProjectDetail = () => {
                                                                     <h5 className="text-xs font-bold uppercase tracking-widest text-primary mb-3">Frustrations</h5>
                                                                     <div className="flex flex-wrap gap-2">
                                                                         {profile.frustrations.map((f, j) => (
-                                                                            <span key={j} className="text-xs bg-white/10 px-3 py-1.5 rounded-full border border-white/5">{f}</span>
+                                                                            <span key={j} className="text-xs bg-[#f2f2f2] text-slate-900 font-bold px-3 py-1.5 rounded-full">{f}</span>
                                                                         ))}
                                                                     </div>
                                                                 </div>

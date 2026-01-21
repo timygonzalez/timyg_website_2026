@@ -3,14 +3,13 @@ export const projects = [
         "id": "fluree",
         "title": "Fluree Nexus",
         "category": "SaaS Generative AI Data",
-        "logo": "https://framerusercontent.com/images/DhTxC1vtFkBapzufSnftchm458.png",
         "thumbnail": "/assets/projects/fluree.png",
         "description": "Fluree PBC is a data management company that provides a AI-enabled secure and trusted data platform for enterprises.",
         "tags": ["Senior Product Designer", "2024"],
         "meta": {
             "Company": "Fluree",
             "Product": "Fluree Nexus",
-            "Collaborators": "Bryan Ranzenberger | UX Designer, Timy Gonzalez | UX Designer, Jose Arias | 3D Graphic Artist",
+            "Collaborators": "Bryan Ranzenberger | UX Designer, Jose Arias | 3D Graphic Artist",
             "Role": "Senior Product Designer",
             "Year": "2024"
         },
@@ -82,23 +81,21 @@ export const projects = [
             { "url": "https://framerusercontent.com/images/tBRDVfkX7tLIoFYTLWIwwrtzHog.png", "label": "Data Lineage Visualization" }
         ],
         "tools": [
-            { "name": "Figma", "url": "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png" },
-            { "name": "UsabilityHub", "url": "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png" },
-            { "name": "Jira", "url": "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png" },
-            { "name": "Adobe Creative Cloud", "url": "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png" },
-            { "name": "Adobe Illustrator", "url": "/adobe-illustrator.png" },
-            { "name": "Framer", "url": "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png" },
-            { "name": "Azure DevOps", "url": "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png" },
-            { "name": "Miro", "url": "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png" },
-            { "name": "Adobe Photoshop", "url": "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png" }
+            "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png",
+            "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png",
+            "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png",
+            "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png",
+            "https://framerusercontent.com/images/cv3y6f5f6uBDZ6CPe4SxYtuLToI.png",
+            "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png",
+            "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png",
+            "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png",
+            "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png"
         ]
     },
     {
         "id": "zetta",
         "title": "ZettaSense",
         "category": "AI & Data Analytics",
-        "logo": "/assets/logos/zetta_full.png",
-        "hideHeaderCompanyName": true,
         "thumbnail": "/assets/projects/zetta.png",
         "description": "ZettaLabs was a data analytics technology company focused on simplifying the process of preparing raw data for analysis.",
         "tags": ["Director of UX Design", "2018-2024"],
@@ -136,81 +133,10 @@ export const projects = [
                         "name": "Maria Smith",
                         "role": "Data Analyst",
                         "age": "30",
-                        "bio": "Maria lives in Charlotte, NC. She is a data analyst who loves mentoring junior employees. Masters in Computer Science, Married, High Tech Literacy.",
-                        "image": "https://framerusercontent.com/images/zdheeHXO7YBKA5KUmhUft69RWs.png",
-                        "needs": [
-                            "Master a process to ingest, classify, and resolve data",
-                            "Leverage knowledge of AI to use AI/ML-driven workflows",
-                            "Be productive and efficient"
-                        ],
-                        "frustrations": [
-                            "Steep learning curve in older products",
-                            "Bad UX experiences in legacy software",
-                            "Lack of a seamless user experience among all products"
-                        ]
-                    },
-                    {
-                        "name": "Mark Kaiser",
-                        "role": "Business Analyst",
-                        "age": "35",
-                        "bio": "Mark lives in Charlotte, NC. He is a business analyst. He likes to work remotely and he travels frequently to consult with clients. MBA, Single, High Tech Literacy.",
-                        "image": "https://framerusercontent.com/images/JknUx9q1IfbNVUWqBwQMB0yX71E.png",
-                        "needs": [
-                            "Master a process to ingest, classify, and resolve data",
-                            "Leverage knowledge of AI to use AI/ML-driven workflows",
-                            "Produce trusted golden records"
-                        ],
-                        "frustrations": [
-                            "Steep learning curve in older products",
-                            "Bad UX experiences in legacy software",
-                            "Lack of a seamless user experience among products"
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "flow",
-                "title": "User Journey and UI Designs",
-                "items": [
-                    {
-                        "title": "Information Architecture",
-                        "content": "Architectural diagram showing the flow and structure of the ZettaSense platform.",
-                        "image": "https://framerusercontent.com/images/yGhvlPx5VCqmtORiT59NOUaQ.png"
-                    },
-                    {
-                        "title": "The user logs into the system",
-                        "content": "The user logs into the system with the provided user name and temporary password. The user follows the authentication procedure, outlined in a separate use case.",
-                        "image": "https://framerusercontent.com/images/dMduSXvvQpPatimYJFaHcw2Llo.png"
-                    },
-                    {
-                        "title": "The system displays the project dashboard",
-                        "content": "Upon successful login, the system displays the main dashboard.",
-                        "image": "https://framerusercontent.com/images/Vz2sGgHaXMp9Wj8uMMgcnZBTNNI.png"
-                    },
-                    {
-                        "title": "The user creates a new project",
-                        "content": "The user clicks on Project > Create a New Project and enters the project name, project description, and selects the entity to be resolved.",
-                        "image": "https://framerusercontent.com/images/i1ews1q3VL3WqehV72BDtIjmCM.png"
-                    },
-                    {
-                        "title": "The user adds team members to the project",
-                        "content": "Using a two-panel layout, the user adds additional team members to this particular project. At the same time, the user provides proper authorizations and roles to the individual project members.",
-                        "image": "https://framerusercontent.com/images/XdIpq9ml0bIXqSCEVqSgGjJYUc.png"
-                    },
-                    {
-                        "title": "The user adds data sets to the project",
-                        "content": "Using a two-panel-layout, the user adds one or more data sets to the project. The user can also change the authoritative ranking for all the data sets selected.",
-                        "image": "https://framerusercontent.com/images/ldezNg7LcDYkyz383fcirGa38w8.png"
-                    },
-                    {
-                        "title": "The user maps data set attributes to the entity models",
-                        "content": "Using a two-panel layout, the user maps the entity model, using a drag-and-drop pattern, for each attribute of the data sets. The mappings have a different visual treatment for better visual identification.",
-                        "image": "https://framerusercontent.com/images/saI7oGVIKdHkEiG3nqRYEoahtM.png"
-                    },
-                    {
-                        "title": "The user runs the model",
-                        "content": "The user runs the model. The system displays a dashboard with confidence level results and other metrics. The user is now ready to repeat the process to create a new project, or proceed to the system training module.",
-                        "image": "https://framerusercontent.com/images/HxfSwKO5tlHRq0ZfAGLh0gA02Qg.png"
+                        "bio": "Maria needs to master a process to ingest, classify, and resolve data while leveraging AI knowledge.",
+                        "needs": ["Master data ingestion", "Leverage AI workflows", "Efficiency"],
+                        "frustrations": ["Legacy product steep learning curves", "Bad UX"],
+                        "image": "https://framerusercontent.com/images/zdheeHXO7YBKA5KUmhUft69RWs.png"
                     }
                 ]
             }
@@ -222,22 +148,15 @@ export const projects = [
             { "url": "https://framerusercontent.com/images/dMduSXvvQpPatimYJFaHcw2Llo.png", "label": "Analytics Overview" }
         ],
         "tools": [
-            { "name": "Figma", "url": "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png" },
-            { "name": "UsabilityHub", "url": "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png" },
-            { "name": "Jira", "url": "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png" },
-            { "name": "Adobe Creative Cloud", "url": "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png" },
-            { "name": "Adobe Illustrator", "url": "/adobe-illustrator.png" },
-            { "name": "Framer", "url": "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png" },
-            { "name": "Azure DevOps", "url": "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png" },
-            { "name": "Miro", "url": "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png" },
-            { "name": "Adobe Photoshop", "url": "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png" }
+            "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png",
+            "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png",
+            "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png"
         ]
     },
     {
         "id": "nfl",
         "title": "NFL Schedule Optimizer",
         "category": "Sports Enterprise",
-        "logo": "https://framerusercontent.com/images/HwoQwoeO8Jnuq7rJhvwlKZEyv1k.png",
         "thumbnail": "/assets/projects/nfl.png",
         "description": "Mathematical optimization software used by the NFL to generate and analyze potential game schedules.",
         "tags": ["Director of Product Design", "2022"],
@@ -305,22 +224,15 @@ export const projects = [
             { "url": "https://framerusercontent.com/images/aXZXU5zse6HXwqPX4v0WOkbShPM.png", "label": "UX Process Infographic" }
         ],
         "tools": [
-            { "name": "Figma", "url": "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png" },
-            { "name": "UsabilityHub", "url": "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png" },
-            { "name": "Jira", "url": "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png" },
-            { "name": "Adobe Creative Cloud", "url": "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png" },
-            { "name": "Adobe Illustrator", "url": "/adobe-illustrator.png" },
-            { "name": "Framer", "url": "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png" },
-            { "name": "Azure DevOps", "url": "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png" },
-            { "name": "Miro", "url": "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png" },
-            { "name": "Adobe Photoshop", "url": "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png" }
+            "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png",
+            "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png",
+            "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png"
         ]
     },
     {
         "id": "wells",
         "title": "Enterprise Allegation Platform (EAP)",
         "category": "Fintech",
-        "logo": "https://framerusercontent.com/images/qyfUsEigJTCFin9bbz8tUQl74.png",
         "thumbnail": "/assets/projects/wells.png",
         "description": "Modernized legacy banking interfaces to receive and manage anonymous allegations for Wells Fargo.",
         "tags": ["Lead Product Designer", "2016"],
@@ -367,24 +279,12 @@ export const projects = [
             { "url": "https://framerusercontent.com/images/VuYVmX6Pa3klQcYBnsW2e8pFVUI.png", "label": "Persona Card - Andrew Smith" },
             { "url": "https://framerusercontent.com/images/yBoXH1PryMYkuLUPfScBBDFrkjE.png", "label": "Design System Forms" },
             { "url": "https://framerusercontent.com/images/iBhTvVrUPZcJNWXvundEsGiZJ7E.png", "label": "Accessibility Guidelines" }
-        ],
-        "tools": [
-            { "name": "Figma", "url": "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png" },
-            { "name": "UsabilityHub", "url": "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png" },
-            { "name": "Jira", "url": "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png" },
-            { "name": "Adobe Creative Cloud", "url": "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png" },
-            { "name": "Adobe Illustrator", "url": "/adobe-illustrator.png" },
-            { "name": "Framer", "url": "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png" },
-            { "name": "Azure DevOps", "url": "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png" },
-            { "name": "Miro", "url": "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png" },
-            { "name": "Adobe Photoshop", "url": "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png" }
         ]
     },
     {
         "id": "morgan",
         "title": "Financial Dashboards (Morgan Stanley)",
         "category": "Fintech",
-        "logo": "https://framerusercontent.com/images/2TgYow0M6Zw6RSClmf2dWNxu60.png",
         "thumbnail": "/assets/projects/morgan.png",
         "description": "Document management system for high-frequency financial product literature search and retrieval.",
         "tags": ["Senior Product Designer", "2016"],
@@ -448,24 +348,12 @@ export const projects = [
         "gallery": [
             { "url": "https://framerusercontent.com/images/9NnK2dvbfSkn4dVK62098ZOC18.png", "label": "Search Interface Preview" },
             { "url": "https://framerusercontent.com/images/Ko7BKCIdUzQqiugM6eML5ueADc.png", "label": "Dashboard Design" }
-        ],
-        "tools": [
-            { "name": "Figma", "url": "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png" },
-            { "name": "UsabilityHub", "url": "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png" },
-            { "name": "Jira", "url": "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png" },
-            { "name": "Adobe Creative Cloud", "url": "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png" },
-            { "name": "Adobe Illustrator", "url": "/adobe-illustrator.png" },
-            { "name": "Framer", "url": "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png" },
-            { "name": "Azure DevOps", "url": "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png" },
-            { "name": "Miro", "url": "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png" },
-            { "name": "Adobe Photoshop", "url": "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png" }
         ]
     },
     {
         "id": "ihsmarkit",
         "title": "Financial Dashboards (IHS Markit)",
         "category": "Data Analytics",
-        "logo": "https://framerusercontent.com/images/Cpsjk3aVItZHcZZPMRFQuSDXCI.png",
         "thumbnail": "/assets/projects/ihsmarkit.png",
         "description": "KPI dashboards for USAA savings and investment performance monitoring.",
         "tags": ["Senior UX Designer", "2016"],
@@ -512,17 +400,6 @@ export const projects = [
             { "url": "https://framerusercontent.com/images/LUc39xiWFrjGUOGRy5bAd63Y.png", "label": "USAA Dashboard Overview" },
             { "url": "https://framerusercontent.com/images/zj6zv46UsrNVphZzBVkAW8AAuSU.png", "label": "UI Design Example" },
             { "url": "https://framerusercontent.com/images/YsoBfwdlWR7r6fSmTmDGfOCjlU.svg", "label": "Data Visualization Concept" }
-        ],
-        "tools": [
-            { "name": "Figma", "url": "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png" },
-            { "name": "UsabilityHub", "url": "https://framerusercontent.com/images/SeeR3iSEp0Grw8iXXGprD9NZL2U.png" },
-            { "name": "Jira", "url": "https://framerusercontent.com/images/NC2P1yedH2ALsZHE7BToZhQAjPU.png" },
-            { "name": "Adobe Creative Cloud", "url": "https://framerusercontent.com/images/MPh0xIrTFFZrTpYEKUs5iIIphs.png" },
-            { "name": "Adobe Illustrator", "url": "/adobe-illustrator.png" },
-            { "name": "Framer", "url": "https://framerusercontent.com/images/Ps0S3DLD3eqpuWY7MKerC21CEA.png" },
-            { "name": "Azure DevOps", "url": "https://framerusercontent.com/images/dOxfwLMmge7LH3r2f9zKItaUk.png" },
-            { "name": "Miro", "url": "https://framerusercontent.com/images/JkC2fX6UBz9NGUw4VqsBBPCv0Lk.png" },
-            { "name": "Adobe Photoshop", "url": "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png" }
         ]
     }
 ];
