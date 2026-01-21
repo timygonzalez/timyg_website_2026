@@ -45,9 +45,11 @@ const ProjectDetail = () => {
                                         alt={project.meta?.Company || "Company Logo"}
                                         className="h-16 w-auto object-contain rounded-md"
                                     />
-                                    <span className="text-3xl font-bold text-slate-900">
-                                        {project.meta?.Company || project.category}
-                                    </span>
+                                    {!project.hideHeaderCompanyName && (
+                                        <span className="text-3xl font-bold text-slate-900">
+                                            {project.meta?.Company || project.category}
+                                        </span>
+                                    )}
                                 </div>
                                 <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
                                     {project.title}
