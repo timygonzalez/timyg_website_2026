@@ -198,6 +198,33 @@ const ProjectDetail = () => {
                                         </section>
                                     );
 
+                                case 'flow':
+                                    return (
+                                        <section key={idx}>
+                                            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12 flex items-center">
+                                                <span className="w-10 h-10 bg-slate-900 text-white rounded-xl flex items-center justify-center mr-4 text-sm">05</span>
+                                                {section.title}
+                                            </h2>
+                                            <div className="space-y-24">
+                                                {section.items.map((item, i) => (
+                                                    <div key={i} className="flex flex-col gap-8">
+                                                        <div className="max-w-3xl">
+                                                            <h3 className="text-2xl font-bold text-slate-900 mb-4">{item.title}</h3>
+                                                            <p className="text-xl text-slate-600 leading-relaxed">{item.content}</p>
+                                                        </div>
+                                                        <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100 bg-slate-50">
+                                                            <img
+                                                                src={item.image}
+                                                                alt={item.title}
+                                                                className="w-full h-auto object-cover"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </section>
+                                    );
+
                                 default:
                                     return null;
                             }
