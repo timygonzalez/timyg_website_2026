@@ -148,7 +148,6 @@ export const projects = [
                         "quote": "I want an efficient use of my time when using this software.",
                         "personality": ["Leader", "Thinker", "Analyzer", "Tech-savvy"],
                         "image": "https://framerusercontent.com/images/zdheeHXO7YBKA5KUmhUft69RWs.png",
-                        "gridImage": "https://framerusercontent.com/images/60QyToj264yFTpEJgHtFT79Jn8Q.png",
                         "needs": [
                             "Needs to master a process to ingest, classify, and resolve data",
                             "Needs to leverage her knowledge of AI to use AI/ML-driven workflows",
@@ -176,7 +175,6 @@ export const projects = [
                         "quote": "I am used to wasting a lot of time with products that have confusing user experiences.",
                         "personality": ["Introvert", "Thinker", "Analyzer", "Tech-savvy"],
                         "image": "https://framerusercontent.com/images/JknUx9q1IfbNVUWqBwQMB0yX71E.png",
-                        "gridImage": "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png",
                         "needs": [
                             "Needs to master a process to ingest, classify, and resolve data",
                             "Needs to leverage knowledge of AI to use AI/ML-driven workflows",
