@@ -39,7 +39,7 @@ const ProjectDetail = () => {
                     <header className="mb-20">
                         <div className="flex flex-col lg:flex-row gap-12 items-center mb-16">
                             <div className="lg:w-1/2">
-                                <div className="flex items-center gap-4 mb-6">
+                                <div className="flex items-center gap-4 mb-2">
                                     <img
                                         src={project.logo || project.thumbnail}
                                         alt={project.meta?.Company || "Company Logo"}
