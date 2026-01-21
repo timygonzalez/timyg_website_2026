@@ -136,34 +136,56 @@ export const projects = [
                         "name": "Maria Smith",
                         "role": "Data Analyst",
                         "age": "30",
-                        "bio": "Maria lives in Charlotte, NC. She is a data analyst who loves mentoring junior employees. Masters in Computer Science, Married, High Tech Literacy.",
+                        "demographics": {
+                            "age": "30",
+                            "education": "Masters in Computer Science",
+                            "status": "Married",
+                            "occupation": "Data Analyst",
+                            "location": "Mooresville, NC",
+                            "techLiterate": "High"
+                        },
+                        "bio": "Maria lives in Charlotte, NC. She is a data analyst. She loves working with data and likes to mentor junior employees.",
+                        "quote": "I want an efficient use of my time when using this software.",
+                        "personality": ["Leader", "Thinker", "Analyzer", "Tech-savvy"],
                         "image": "https://framerusercontent.com/images/zdheeHXO7YBKA5KUmhUft69RWs.png",
+                        "gridImage": "https://framerusercontent.com/images/60QyToj264yFTpEJgHtFT79Jn8Q.png",
                         "needs": [
-                            "Master a process to ingest, classify, and resolve data",
-                            "Leverage knowledge of AI to use AI/ML-driven workflows",
-                            "Be productive and efficient"
+                            "Needs to master a process to ingest, classify, and resolve data",
+                            "Needs to leverage her knowledge of AI to use AI/ML-driven workflows",
+                            "Needs to be productive and efficient"
                         ],
                         "frustrations": [
-                            "Steep learning curve in older products",
-                            "Bad UX experiences in legacy software",
-                            "Lack of a seamless user experience among all products"
+                            "The older products she is using have a steep learning curve",
+                            "The older products she uses have bad UX experiences",
+                            "With the older software she uses, she does not have a seamless user experience among all products"
                         ]
                     },
                     {
                         "name": "Mark Kaiser",
                         "role": "Business Analyst",
                         "age": "35",
-                        "bio": "Mark lives in Charlotte, NC. He is a business analyst. He likes to work remotely and he travels frequently to consult with clients. MBA, Single, High Tech Literacy.",
+                        "demographics": {
+                            "age": "35",
+                            "education": "Masters in Business Administration",
+                            "status": "Single",
+                            "occupation": "Business Analyst",
+                            "location": "Mooresville, NC",
+                            "techLiterate": "Medium"
+                        },
+                        "bio": "Mark lives in Charlotte, NC. He is a business analyst. He likes to work remotely and he travels frequently to consult with clients.",
+                        "quote": "I am used to wasting a lot of time with products that have confusing user experiences.",
+                        "personality": ["Introvert", "Thinker", "Analyzer", "Tech-savvy"],
                         "image": "https://framerusercontent.com/images/JknUx9q1IfbNVUWqBwQMB0yX71E.png",
+                        "gridImage": "https://framerusercontent.com/images/09QqB0OMcetGIzjp0FvZw2mywwE.png",
                         "needs": [
-                            "Master a process to ingest, classify, and resolve data",
-                            "Leverage knowledge of AI to use AI/ML-driven workflows",
-                            "Produce trusted golden records"
+                            "Needs to master a process to ingest, classify, and resolve data",
+                            "Needs to leverage knowledge of AI to use AI/ML-driven workflows",
+                            "Needs to produce trusted golden records"
                         ],
                         "frustrations": [
-                            "Steep learning curve in older products",
-                            "Bad UX experiences in legacy software",
-                            "Lack of a seamless user experience among products"
+                            "The older products he is using have a steep learning curve",
+                            "The older products he uses have bad UX experiences",
+                            "With the older software he uses, he does not have a seamless user experience among products"
                         ]
                     }
                 ]

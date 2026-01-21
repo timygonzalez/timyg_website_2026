@@ -151,45 +151,112 @@ const ProjectDetail = () => {
                                 case 'personas':
                                     return (
                                         <section key={idx}>
-                                            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-10 flex items-center">
+                                            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12 flex items-center">
                                                 <span className="w-10 h-10 bg-slate-900 text-white rounded-xl flex items-center justify-center mr-4 text-sm">04</span>
                                                 {section.title}
                                             </h2>
-                                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                                            <div className="space-y-16">
                                                 {section.profiles.map((profile, i) => (
-                                                    <div key={i} className="bg-[#1d1a1a] text-white rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row shadow-2xl">
-                                                        <div className="md:w-1/3">
-                                                            <img
-                                                                src={profile.image}
-                                                                alt={profile.name}
-                                                                className="w-full h-full object-cover min-h-[300px]"
-                                                            />
-                                                        </div>
-                                                        <div className="md:w-2/3 p-8 md:p-10 flex flex-col justify-center">
-                                                            <div className="mb-6">
-                                                                <h3 className="text-3xl font-bold mb-1">{profile.name}</h3>
-                                                                <p className="text-white font-medium tracking-wide text-sm">{profile.role}, {profile.age}</p>
+                                                    <div key={i} className="bg-[#1D1A1A] rounded-[2rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row text-white font-sans">
+                                                        {/* Left Sidebar */}
+                                                        <div className="lg:w-[35%] p-8 md:p-12 border-r border-white/5 flex flex-col">
+                                                            <h3 className="text-3xl font-bold mb-8 text-center">{profile.name}</h3>
+                                                            <div className="flex justify-center mb-10">
+                                                                <img
+                                                                    src={profile.image}
+                                                                    alt={profile.name}
+                                                                    className="w-48 h-48 rounded-full object-cover border-4 border-white/5"
+                                                                />
                                                             </div>
-                                                            <p className="text-white/80 text-sm leading-relaxed mb-8 italic">
-                                                                "{profile.bio}"
-                                                            </p>
-                                                            <div className="space-y-6">
-                                                                <div>
-                                                                    <h5 className="text-xs font-bold uppercase tracking-widest text-primary mb-3">Core Needs</h5>
-                                                                    <div className="flex flex-wrap gap-2">
-                                                                        {profile.needs.map((n, j) => (
-                                                                            <span key={j} className="text-xs bg-[#f2f2f2] text-slate-900 font-bold px-3 py-1.5 rounded-full">{n}</span>
+
+                                                            {/* Demographics */}
+                                                            <div className="space-y-4 mb-10 text-sm">
+                                                                <div className="grid grid-cols-3 gap-4">
+                                                                    <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Age</span>
+                                                                    <span className="col-span-2 font-medium">{profile.demographics?.age || profile.age}</span>
+                                                                </div>
+                                                                <div className="grid grid-cols-3 gap-4">
+                                                                    <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Education</span>
+                                                                    <span className="col-span-2 font-medium">{profile.demographics?.education}</span>
+                                                                </div>
+                                                                <div className="grid grid-cols-3 gap-4">
+                                                                    <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Status</span>
+                                                                    <span className="col-span-2 font-medium">{profile.demographics?.status}</span>
+                                                                </div>
+                                                                <div className="grid grid-cols-3 gap-4">
+                                                                    <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Occupation</span>
+                                                                    <span className="col-span-2 font-medium">{profile.demographics?.occupation || profile.role}</span>
+                                                                </div>
+                                                                <div className="grid grid-cols-3 gap-4">
+                                                                    <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Location</span>
+                                                                    <span className="col-span-2 font-medium">{profile.demographics?.location}</span>
+                                                                </div>
+                                                                <div className="grid grid-cols-3 gap-4">
+                                                                    <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Tech Literate</span>
+                                                                    <span className="col-span-2 font-medium">{profile.demographics?.techLiterate}</span>
+                                                                </div>
+                                                            </div>
+
+                                                            {/* Quote Box */}
+                                                            <div className="mt-auto bg-[#131111] p-6 rounded-xl relative">
+                                                                <span className="text-4xl text-white/20 absolute top-4 left-4 font-serif">"</span>
+                                                                <p className="text-white/90 italic text-lg leading-relaxed relative z-10 pl-6 pt-2">
+                                                                    {profile.quote}
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                        {/* Right Content */}
+                                                        <div className="lg:w-[65%] p-8 md:p-12 flex flex-col bg-[#1D1A1A]">
+                                                            {/* Bio */}
+                                                            <div className="mb-10">
+                                                                <h4 className="text-white/40 font-bold text-lg mb-2">Bio</h4>
+                                                                <p className="text-white/80 leading-relaxed text-lg">
+                                                                    {profile.bio}
+                                                                </p>
+                                                            </div>
+
+                                                            {/* Needs */}
+                                                            <div className="mb-10">
+                                                                <h4 className="text-white/40 font-bold text-lg mb-4">Core needs</h4>
+                                                                <ul className="list-disc list-inside space-y-2 text-white/80">
+                                                                    {profile.needs.map((needed, k) => (
+                                                                        <li key={k}>{needed}</li>
+                                                                    ))}
+                                                                </ul>
+                                                            </div>
+
+                                                            {/* Frustrations */}
+                                                            <div className="mb-10">
+                                                                <h4 className="text-white/40 font-bold text-lg mb-4">Frustrations</h4>
+                                                                <ul className="list-disc list-inside space-y-2 text-white/80">
+                                                                    {profile.frustrations.map((frustration, k) => (
+                                                                        <li key={k}>{frustration}</li>
+                                                                    ))}
+                                                                </ul>
+                                                            </div>
+
+                                                            {/* Personality & Grid Container */}
+                                                            <div className="flex flex-col md:flex-row gap-8 items-end">
+                                                                <div className="flex-1 w-full">
+                                                                    <h4 className="text-white/40 font-bold text-lg mb-4">Personality</h4>
+                                                                    <div className="flex flex-wrap gap-3">
+                                                                        {profile.personality?.map((tag, k) => (
+                                                                            <span key={k} className="bg-white text-slate-900 px-5 py-2 rounded-full text-sm font-bold">
+                                                                                {tag}
+                                                                            </span>
                                                                         ))}
                                                                     </div>
                                                                 </div>
-                                                                <div>
-                                                                    <h5 className="text-xs font-bold uppercase tracking-widest text-primary mb-3">Frustrations</h5>
-                                                                    <div className="flex flex-wrap gap-2">
-                                                                        {profile.frustrations.map((f, j) => (
-                                                                            <span key={j} className="text-xs bg-[#f2f2f2] text-slate-900 font-bold px-3 py-1.5 rounded-full">{f}</span>
-                                                                        ))}
+                                                                {profile.gridImage && (
+                                                                    <div className="w-full md:w-1/2">
+                                                                        <img
+                                                                            src={profile.gridImage}
+                                                                            alt="Motivation vs Analytical Skills"
+                                                                            className="w-full h-auto object-contain rounded-lg"
+                                                                        />
                                                                     </div>
-                                                                </div>
+                                                                )}
                                                             </div>
                                                         </div>
                                                     </div>
