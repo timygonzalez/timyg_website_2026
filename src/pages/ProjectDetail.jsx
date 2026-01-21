@@ -171,29 +171,29 @@ const ProjectDetail = () => {
 
                                                             {/* Demographics */}
                                                             <div className="space-y-4 mb-10 text-sm">
-                                                                <div className="grid grid-cols-3 gap-4">
+                                                                <div className="grid grid-cols-[120px_1fr] gap-4">
                                                                     <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Age</span>
-                                                                    <span className="col-span-2 font-medium">{profile.demographics?.age || profile.age}</span>
+                                                                    <span className="font-medium">{profile.demographics?.age || profile.age}</span>
                                                                 </div>
-                                                                <div className="grid grid-cols-3 gap-4">
+                                                                <div className="grid grid-cols-[120px_1fr] gap-4">
                                                                     <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Education</span>
-                                                                    <span className="col-span-2 font-medium">{profile.demographics?.education}</span>
+                                                                    <span className="font-medium">{profile.demographics?.education}</span>
                                                                 </div>
-                                                                <div className="grid grid-cols-3 gap-4">
+                                                                <div className="grid grid-cols-[120px_1fr] gap-4">
                                                                     <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Status</span>
-                                                                    <span className="col-span-2 font-medium">{profile.demographics?.status}</span>
+                                                                    <span className="font-medium">{profile.demographics?.status}</span>
                                                                 </div>
-                                                                <div className="grid grid-cols-3 gap-4">
+                                                                <div className="grid grid-cols-[120px_1fr] gap-4">
                                                                     <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Occupation</span>
-                                                                    <span className="col-span-2 font-medium">{profile.demographics?.occupation || profile.role}</span>
+                                                                    <span className="font-medium">{profile.demographics?.occupation || profile.role}</span>
                                                                 </div>
-                                                                <div className="grid grid-cols-3 gap-4">
+                                                                <div className="grid grid-cols-[120px_1fr] gap-4">
                                                                     <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Location</span>
-                                                                    <span className="col-span-2 font-medium">{profile.demographics?.location}</span>
+                                                                    <span className="font-medium">{profile.demographics?.location}</span>
                                                                 </div>
-                                                                <div className="grid grid-cols-3 gap-4">
+                                                                <div className="grid grid-cols-[120px_1fr] gap-4">
                                                                     <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Tech Literate</span>
-                                                                    <span className="col-span-2 font-medium">{profile.demographics?.techLiterate}</span>
+                                                                    <span className="font-medium">{profile.demographics?.techLiterate}</span>
                                                                 </div>
                                                             </div>
 
