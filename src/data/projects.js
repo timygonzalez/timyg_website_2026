@@ -144,10 +144,13 @@ export const projects = [
                             "location": "Mooresville, NC",
                             "techLiterate": "High"
                         },
+                        "techLiterate": "High",
+                        "cardImage": "/assets/projects/zetta/persona_maria.png",
                         "bio": "Maria lives in Charlotte, NC. She is a data analyst. She loves working with data and likes to mentor junior employees.",
                         "quote": "I want an efficient use of my time when using this software.",
                         "personality": ["Leader", "Thinker", "Analyzer", "Tech-savvy"],
                         "image": "https://framerusercontent.com/images/zdheeHXO7YBKA5KUmhUft69RWs.png",
+                        "gridImage": "https://framerusercontent.com/images/3mqjZJARZNcA6UmHYcyZfqhyPc.png",
                         "needs": [
                             "Needs to master a process to ingest, classify, and resolve data",
                             "Needs to leverage her knowledge of AI to use AI/ML-driven workflows",
@@ -171,10 +174,13 @@ export const projects = [
                             "location": "Mooresville, NC",
                             "techLiterate": "Medium"
                         },
+                        "techLiterate": "Medium",
+                        "cardImage": "/assets/projects/zetta/persona_mark.png",
                         "bio": "Mark lives in Charlotte, NC. He is a business analyst. He likes to work remotely and he travels frequently to consult with clients.",
                         "quote": "I am used to wasting a lot of time with products that have confusing user experiences.",
                         "personality": ["Introvert", "Thinker", "Analyzer", "Tech-savvy"],
                         "image": "https://framerusercontent.com/images/JknUx9q1IfbNVUWqBwQMB0yX71E.png",
+                        "gridImage": "https://framerusercontent.com/images/wOaYtzSE2vb0K1mehu7hhrVVQg.png",
                         "needs": [
                             "Needs to master a process to ingest, classify, and resolve data",
                             "Needs to leverage knowledge of AI to use AI/ML-driven workflows",
@@ -200,7 +206,7 @@ export const projects = [
                     {
                         "title": "The user logs into the system",
                         "content": "The user logs into the system with the provided user name and temporary password. The user follows the authentication procedure, outlined in a separate use case.",
-                        "image": "https://framerusercontent.com/images/dMduSXvvQpPatimYJFaHcw2Llo.png"
+                        "image": "/assets/projects/zetta/zetta_login_final.png"
                     },
                     {
                         "title": "The system displays the project dashboard",
@@ -238,8 +244,7 @@ export const projects = [
         "gallery": [
             { "url": "https://framerusercontent.com/images/SRvL5S8cS2eCe4BGzWINBGmu5M.png", "label": "Project Dashboard" },
             { "url": "https://framerusercontent.com/images/saI7oGVIKdHkEiG3nqRYEoahtM.png", "label": "Entity Model Mapping" },
-            { "url": "https://framerusercontent.com/images/HxfSwKO5tlHRq0ZfAGLh0gA02Qg.png", "label": "Model Execution Results" },
-            { "url": "https://framerusercontent.com/images/dMduSXvvQpPatimYJFaHcw2Llo.png", "label": "Analytics Overview" }
+            { "url": "https://framerusercontent.com/images/HxfSwKO5tlHRq0ZfAGLh0gA02Qg.png", "label": "Model Execution Results" }
         ],
         "tools": [
             { "name": "Figma", "url": "https://framerusercontent.com/images/oFcY5YzvIoGgkrVikItMbEm5AXA.png" },

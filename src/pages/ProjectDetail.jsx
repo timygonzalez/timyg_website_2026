@@ -43,7 +43,7 @@ const ProjectDetail = () => {
                                     <img
                                         src={project.logo || project.thumbnail}
                                         alt={project.meta?.Company || "Company Logo"}
-                                        className="h-16 w-auto object-contain rounded-md"
+                                        className="h-16 w-auto object-contain"
                                     />
                                     {!project.hideHeaderCompanyName && (
                                         <span className="text-3xl font-bold text-slate-900">
@@ -62,7 +62,7 @@ const ProjectDetail = () => {
                             {/* Main Hero Image - Right Column */}
                             <div className="lg:w-1/2">
                                 {project.gallery && project.gallery[0] && (
-                                    <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100 bg-slate-50">
+                                    <div>
                                         <img
                                             src={project.gallery[0].url}
                                             alt={project.gallery[0].label}
@@ -156,111 +156,126 @@ const ProjectDetail = () => {
                                                 {section.title}
                                             </h2>
                                             <div className="space-y-16">
-                                                {section.profiles.map((profile, i) => (
-                                                    <div key={i} className="bg-[#1D1A1A] rounded-[2rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row text-white font-sans">
-                                                        {/* Left Sidebar */}
-                                                        <div className="lg:w-[35%] p-8 md:p-12 border-r border-white/5 flex flex-col">
-                                                            <h3 className="text-3xl font-bold mb-8 text-center">{profile.name}</h3>
-                                                            <div className="flex justify-center mb-10">
+                                                {section.profiles.map((profile, i) => {
+                                                    // If a full card image is provided, render it instead of the complex HTML
+                                                    if (profile.cardImage) {
+                                                        return (
+                                                            <div key={i} className="mb-12">
                                                                 <img
-                                                                    src={profile.image}
-                                                                    alt={profile.name}
-                                                                    className="w-48 h-48 rounded-full object-cover border-4 border-white/5"
+                                                                    src={profile.cardImage}
+                                                                    alt={`${profile.name} Persona Card`}
+                                                                    className="w-full h-auto"
                                                                 />
                                                             </div>
+                                                        );
+                                                    }
 
-                                                            {/* Demographics */}
-                                                            <div className="space-y-4 mb-10 text-sm">
-                                                                <div className="grid grid-cols-[120px_1fr] gap-4">
-                                                                    <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Age</span>
-                                                                    <span className="font-medium">{profile.demographics?.age || profile.age}</span>
+                                                    // Default complex HTML rendering
+                                                    return (
+                                                        <div key={i} className="bg-[#1D1A1A] rounded-[2rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row text-white font-sans">
+                                                            {/* Left Sidebar */}
+                                                            <div className="lg:w-[35%] p-8 md:p-12 border-r border-white/5 flex flex-col">
+                                                                <h3 className="text-3xl font-bold mb-8 text-center">{profile.name}</h3>
+                                                                <div className="flex justify-center mb-10">
+                                                                    <img
+                                                                        src={profile.image}
+                                                                        alt={profile.name}
+                                                                        className="w-48 h-48 object-cover"
+                                                                    />
                                                                 </div>
-                                                                <div className="grid grid-cols-[120px_1fr] gap-4">
-                                                                    <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Education</span>
-                                                                    <span className="font-medium">{profile.demographics?.education}</span>
+
+                                                                {/* Demographics */}
+                                                                <div className="space-y-4 mb-10 text-sm">
+                                                                    <div className="grid grid-cols-[120px_1fr] gap-4">
+                                                                        <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Age</span>
+                                                                        <span className="font-medium">{profile.demographics?.age || profile.age}</span>
+                                                                    </div>
+                                                                    <div className="grid grid-cols-[120px_1fr] gap-4">
+                                                                        <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Education</span>
+                                                                        <span className="font-medium">{profile.demographics?.education}</span>
+                                                                    </div>
+                                                                    <div className="grid grid-cols-[120px_1fr] gap-4">
+                                                                        <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Status</span>
+                                                                        <span className="font-medium">{profile.demographics?.status}</span>
+                                                                    </div>
+                                                                    <div className="grid grid-cols-[120px_1fr] gap-4">
+                                                                        <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Occupation</span>
+                                                                        <span className="font-medium">{profile.demographics?.occupation || profile.role}</span>
+                                                                    </div>
+                                                                    <div className="grid grid-cols-[120px_1fr] gap-4">
+                                                                        <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Location</span>
+                                                                        <span className="font-medium">{profile.demographics?.location}</span>
+                                                                    </div>
+                                                                    <div className="grid grid-cols-[120px_1fr] gap-4">
+                                                                        <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Tech Literate</span>
+                                                                        <span className="font-medium">{profile.demographics?.techLiterate}</span>
+                                                                    </div>
                                                                 </div>
-                                                                <div className="grid grid-cols-[120px_1fr] gap-4">
-                                                                    <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Status</span>
-                                                                    <span className="font-medium">{profile.demographics?.status}</span>
-                                                                </div>
-                                                                <div className="grid grid-cols-[120px_1fr] gap-4">
-                                                                    <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Occupation</span>
-                                                                    <span className="font-medium">{profile.demographics?.occupation || profile.role}</span>
-                                                                </div>
-                                                                <div className="grid grid-cols-[120px_1fr] gap-4">
-                                                                    <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Location</span>
-                                                                    <span className="font-medium">{profile.demographics?.location}</span>
-                                                                </div>
-                                                                <div className="grid grid-cols-[120px_1fr] gap-4">
-                                                                    <span className="text-white/40 uppercase tracking-wider font-bold text-xs self-center">Tech Literate</span>
-                                                                    <span className="font-medium">{profile.demographics?.techLiterate}</span>
+
+                                                                {/* Quote Box */}
+                                                                <div className="mt-auto bg-[#131111] p-6 rounded-xl relative">
+                                                                    <span className="text-4xl text-white/20 absolute top-4 left-4 font-serif">"</span>
+                                                                    <p className="text-white/90 italic text-lg leading-relaxed relative z-10 pl-6 pt-2">
+                                                                        {profile.quote}
+                                                                    </p>
                                                                 </div>
                                                             </div>
 
-                                                            {/* Quote Box */}
-                                                            <div className="mt-auto bg-[#131111] p-6 rounded-xl relative">
-                                                                <span className="text-4xl text-white/20 absolute top-4 left-4 font-serif">"</span>
-                                                                <p className="text-white/90 italic text-lg leading-relaxed relative z-10 pl-6 pt-2">
-                                                                    {profile.quote}
-                                                                </p>
-                                                            </div>
-                                                        </div>
-
-                                                        {/* Right Content */}
-                                                        <div className="lg:w-[65%] p-8 md:p-12 flex flex-col bg-[#1D1A1A]">
-                                                            {/* Bio */}
-                                                            <div className="mb-10">
-                                                                <h4 className="text-white/40 font-bold text-lg mb-2">Bio</h4>
-                                                                <p className="text-white/80 leading-relaxed text-lg">
-                                                                    {profile.bio}
-                                                                </p>
-                                                            </div>
-
-                                                            {/* Needs */}
-                                                            <div className="mb-10">
-                                                                <h4 className="text-white/40 font-bold text-lg mb-4">Core needs</h4>
-                                                                <ul className="list-disc list-inside space-y-2 text-white/80">
-                                                                    {profile.needs.map((needed, k) => (
-                                                                        <li key={k}>{needed}</li>
-                                                                    ))}
-                                                                </ul>
-                                                            </div>
-
-                                                            {/* Frustrations */}
-                                                            <div className="mb-10">
-                                                                <h4 className="text-white/40 font-bold text-lg mb-4">Frustrations</h4>
-                                                                <ul className="list-disc list-inside space-y-2 text-white/80">
-                                                                    {profile.frustrations.map((frustration, k) => (
-                                                                        <li key={k}>{frustration}</li>
-                                                                    ))}
-                                                                </ul>
-                                                            </div>
-
-                                                            {/* Personality & Grid Container */}
-                                                            <div className="flex flex-col md:flex-row gap-8 items-end">
-                                                                <div className="flex-1 w-full">
-                                                                    <h4 className="text-white/40 font-bold text-lg mb-4">Personality</h4>
-                                                                    <div className="flex flex-wrap gap-3">
-                                                                        {profile.personality?.map((tag, k) => (
-                                                                            <span key={k} className="bg-white text-slate-900 px-5 py-2 rounded-full text-sm font-bold">
-                                                                                {tag}
-                                                                            </span>
+                                                            {/* Right Content */}
+                                                            <div className="lg:w-[65%] p-8 md:p-12 flex flex-col bg-[#1D1A1A]">
+                                                                {/* Bio */}
+                                                                <div className="mb-10">
+                                                                    <h4 className="text-white/40 font-bold text-lg mb-2">Bio</h4>
+                                                                    <p className="text-white/80 leading-relaxed text-lg">
+                                                                        {profile.bio}
+                                                                    </p>
+                                                                </div>
+                                                                {/* Needs */}
+                                                                <div className="mb-10">
+                                                                    <h4 className="text-white/40 font-bold text-lg mb-4">Core needs</h4>
+                                                                    <ul className="list-disc list-inside space-y-2 text-white/80">
+                                                                        {profile.needs.map((needed, k) => (
+                                                                            <li key={k}>{needed}</li>
                                                                         ))}
-                                                                    </div>
+                                                                    </ul>
                                                                 </div>
-                                                                {profile.gridImage && (
-                                                                    <div className="w-full md:w-1/2">
-                                                                        <img
-                                                                            src={profile.gridImage}
-                                                                            alt="Motivation vs Analytical Skills"
-                                                                            className="w-full h-auto object-contain rounded-lg"
-                                                                        />
+
+                                                                {/* Frustrations */}
+                                                                <div className="mb-10">
+                                                                    <h4 className="text-white/40 font-bold text-lg mb-4">Frustrations</h4>
+                                                                    <ul className="list-disc list-inside space-y-2 text-white/80">
+                                                                        {profile.frustrations.map((frustration, k) => (
+                                                                            <li key={k}>{frustration}</li>
+                                                                        ))}
+                                                                    </ul>
+                                                                </div>
+
+                                                                {/* Personality & Grid Container */}
+                                                                <div className="flex flex-col md:flex-row gap-8 items-end">
+                                                                    <div className="flex-1 w-full">
+                                                                        <h4 className="text-white/40 font-bold text-lg mb-4">Personality</h4>
+                                                                        <div className="flex flex-wrap gap-3">
+                                                                            {profile.personality?.map((tag, k) => (
+                                                                                <span key={k} className="bg-white text-slate-900 px-5 py-2 rounded-full text-sm font-bold">
+                                                                                    {tag}
+                                                                                </span>
+                                                                            ))}
+                                                                        </div>
                                                                     </div>
-                                                                )}
+                                                                    {profile.gridImage && (
+                                                                        <div className="w-full md:w-1/2">
+                                                                            <img
+                                                                                src={profile.gridImage}
+                                                                                alt="Motivation vs Analytical Skills"
+                                                                                className="w-full h-auto object-contain"
+                                                                            />
+                                                                        </div>
+                                                                    )}
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                ))}
+                                                    );
+                                                })}
                                             </div>
                                         </section>
                                     );
@@ -279,11 +294,19 @@ const ProjectDetail = () => {
                                                             <h3 className="text-2xl font-bold text-slate-900 mb-4">{item.title}</h3>
                                                             <p className="text-xl text-slate-600 leading-relaxed">{item.content}</p>
                                                         </div>
-                                                        <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100 bg-slate-50">
+                                                        <div className={
+                                                            item.title.includes('logs into the system')
+                                                                ? "mx-auto w-[217px]"
+                                                                : ""
+                                                        }>
                                                             <img
                                                                 src={item.image}
                                                                 alt={item.title}
-                                                                className="w-full h-auto object-cover"
+                                                                className={
+                                                                    item.title.includes('logs into the system')
+                                                                        ? "w-[217px] h-[277px] object-contain"
+                                                                        : "w-full h-auto object-cover"
+                                                                }
                                                             />
                                                         </div>
                                                     </div>
@@ -307,7 +330,7 @@ const ProjectDetail = () => {
                                 <div className="space-y-16">
                                     {project.gallery.slice(1).map((item, i) => (
                                         <div key={i} className="group">
-                                            <div className="rounded-[2.5rem] overflow-hidden shadow-xl border border-slate-100 bg-slate-50 mb-6 transition-transform hover:scale-[1.01] duration-500">
+                                            <div className="mb-6 transition-transform hover:scale-[1.01] duration-500">
                                                 <img
                                                     src={item.url}
                                                     alt={item.label}
